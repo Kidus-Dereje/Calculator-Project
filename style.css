@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(57, 57, 62);
+}
+.container{
+    border: 2px solid white;
+    box-shadow: 0px 0px 15px 7px black;
+    padding: 10px;
+    border-radius: 20px;
+    backdrop-filter: blur(100px);
+    display: grid;
+    grid-template-columns: repeat(4,80px);
+    gap: 10px;
+}
+.display-container{
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    word-wrap: break-word;
+    word-break: break-all;
+    max-height: auto;
+    min-height: 80px;
+}
+.prev-display{
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.642);
+}
+.curr-display{
+    font-size: 3rem;
+    color: white;
+}
+button{
+    font-size: x-large;
+    border: none;
+    border-top: 5px solid rgba(255, 255, 255, 0.183);
+    border-left: 5px solid rgba(255, 255, 255, 0.183);
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.609);
+    &:hover{
+        cursor: pointer;
+    }
+}
+.one-span{
+    width: 5.2rem;
+    height: 5.2rem;
+    border-radius: 50%;
+}
+.two-span{
+    border-radius: 50px;
+    grid-column: span 2;
+}
+#ac,#del,#percent,#div,#mult,#add,#sub{
+    background-color: rgba(0, 0, 0, 0.62);
+    color: yellow;
+}
+#one,#two,#three,#four,#five,#six,#seven,#eight,#nine,#dot,#zero{
+    background-color:rgb(57, 57, 62);
+    color: white;
+}
+#equal{
+    background-color: rgb(241, 126, 143);
+    color: white;
+}
